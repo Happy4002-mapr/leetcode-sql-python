@@ -1,0 +1,16 @@
+class Solution(object):
+    def kidsWithCandies(self, candies, extraCandies):
+
+        answer = []
+
+        greatest = max(candies)
+
+        for i in range(len(candies)):
+
+            if candies[i] + extraCandies >= greatest:
+                answer.append(True)
+
+            else:
+                answer.append(False)
+
+        return answer
